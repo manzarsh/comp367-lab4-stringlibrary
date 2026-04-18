@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<PackageId>StringLibrary</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Manzar</Authors>
+		<Company>Manzar</Company>
+		<Description>A string extension library to check whether a string starts with uppercase.</Description>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+</Project>
