@@ -22,8 +22,6 @@ steps:
 - script: dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
   displayName: 'Pack NuGet package'
 
-# ?? IMPORTANT (this part you were missing)
-
 - task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
 
@@ -33,4 +31,4 @@ steps:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg;!$(Build.ArtifactStagingDirectory)/*.symbols.nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'lab4feed'
+    publishVstsFeed: 'manz_lab4_artifacts/lab4feed'
