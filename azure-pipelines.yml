@@ -22,7 +22,7 @@ steps:
 - script: dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
   displayName: 'Pack NuGet package'
 
-# 👇 IMPORTANT (this part you were missing)
+# ?? IMPORTANT (this part you were missing)
 
 - task: NuGetAuthenticate@1
   displayName: 'NuGet Authenticate'
